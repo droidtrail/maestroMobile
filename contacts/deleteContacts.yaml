@@ -1,0 +1,6 @@
+appId: com.android.contacts
+---
+- assertVisible: "More options"
+- tapOn: "More options"
+- tapOn: "Delete"
+- tapOn: "DELETE"

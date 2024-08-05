@@ -1,0 +1,12 @@
+appId: com.android.contacts
+---
+- tapOn:
+    id: "com.android.contacts:id/toolbar"
+- assertVisible: "Edit contact"
+- tapOn: 
+    text: "Email"
+    repeat: 2
+- inputRandomEmail
+- copyTextFrom: Email
+- tapOn: "SAVE"
+- assertVisible: ${maestro.copiedText}

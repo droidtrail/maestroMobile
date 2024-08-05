@@ -1,0 +1,33 @@
+appId: com.android.contacts
+onFlowStart:
+- swipe:
+    direction: UP
+---
+- launchApp:
+    appId: "com.android.contacts"
+    stopApp: true
+    clearState: true
+- tapOn: "Create new contact"
+- tapOn: "First name"
+- inputRandomPersonName
+- copyTextFrom: First name
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Phone"
+    direction: DOWN
+- tapOn: "Phone"
+- inputRandomNumber:
+    length: 10
+- scrollUntilVisible:
+    element: "Email"
+    direction: DOWN
+- tapOn: "Email"
+- inputRandomEmail
+- tapOn:
+    text: "Home"
+    index: 0
+- tapOn: "Work"
+- tapOn: "Save"
+- assertVisible:
+    text: ${maestro.copiedText}
+    index: 1

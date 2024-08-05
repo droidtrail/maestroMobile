@@ -1,0 +1,7 @@
+appId: com.android.contacts
+---
+- launchApp:
+    appId: "com.android.contacts"
+- runFlow: addContacts.yaml
+- runFlow: deleteContacts.yaml
+- stopApp: com.android.contacts
