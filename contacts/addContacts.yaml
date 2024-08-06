@@ -7,6 +7,9 @@ onFlowStart:
     appId: "com.android.contacts"
     stopApp: true
     clearState: true
+- extendedWaitUntil:
+    visible: "Create new contact"
+    timeout: 10000
 - tapOn: "Create new contact"
 - tapOn: "First name"
 - inputRandomPersonName
@@ -31,3 +34,4 @@ onFlowStart:
 - assertVisible:
     text: ${maestro.copiedText}
     index: 1
+# - back

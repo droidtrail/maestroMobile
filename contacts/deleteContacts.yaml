@@ -1,5 +1,7 @@
 appId: com.android.contacts
 ---
+- tapOn:
+    point: "50%,16%"
 - assertVisible: "More options"
 - tapOn: "More options"
 - tapOn: "Delete"
