@@ -1,0 +1,15 @@
+appId: com.android.vending
+onFlowStart:
+- swipe:
+    direction: UP
+---
+- launchApp:
+    appId: "com.android.vending"
+    stopApp: true
+    clearState: true
+- assertVisible: "Search apps & games"
+- tapOn: "Search apps & games"
+- inputText: "Demo App"
+- assertVisible: "Demo App"
+- tapOn:
+    point: "50%,15%"
