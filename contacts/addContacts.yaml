@@ -34,4 +34,3 @@ onFlowStart:
 - assertVisible:
     text: ${maestro.copiedText}
     index: 1
-# - back
