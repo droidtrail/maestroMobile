@@ -11,5 +11,20 @@ onFlowStart:
 - tapOn: "Search apps & games"
 - inputText: "Demo App"
 - assertVisible: "Demo App"
+- tapOn: "Search for \"demo app\" "
 - tapOn:
-    point: "50%,15%"
+    point: "50%,26%"
+- assertVisible: "UpMenu"
+# swipe photos
+# - tapOn: "Screenshot \"1\" of \"5\""
+# - swipe:
+#     direction: LEFT
+# - swipe:
+#     direction: LEFT
+# - swipe:
+#     direction: LEFT
+# - swipe:
+#     direction: LEFT
+# - back
+- runFlow: swipePhoto.yaml
+- stopApp: com.android.vending
