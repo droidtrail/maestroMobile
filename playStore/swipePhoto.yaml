@@ -1,0 +1,13 @@
+appId: com.android.vending
+---
+- tapOn: "Screenshot \"1\" of \"5\""
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- back
+- stopApp: com.android.vending
