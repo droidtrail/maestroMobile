@@ -33,3 +33,5 @@ samples
 .wget-hsts
 .zshrc
 .gitconfig
+.dotnet
+.mobiledev
