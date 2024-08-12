@@ -1,0 +1,19 @@
+appId: org.wikipedia
+---
+- launchApp:
+    appId: "org.wikipedia"
+    stopApp: true
+    clearState: true
+- assertVisible:
+    id: "org.wikipedia:id/addLangContainer"
+- tapOn:
+    id: "org.wikipedia:id/addLangContainer"
+- assertVisible: "ADD LANGUAGE"
+- tapOn: "ADD LANGUAGE"
+- assertVisible: "Search for a language"
+- tapOn: "Search for a language"
+- inputText: "Portugues"
+- tapOn:
+    text: "Portuguese"
+    index: 0
+- assertVisible: "PT"
