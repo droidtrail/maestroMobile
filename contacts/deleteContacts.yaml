@@ -6,3 +6,4 @@ appId: com.android.contacts
 - tapOn: "More options"
 - tapOn: "Delete"
 - tapOn: "DELETE"
+- stopApp: com.android.contacts
