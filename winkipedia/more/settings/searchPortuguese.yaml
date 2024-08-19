@@ -1,0 +1,11 @@
+appId: org.wikipedia
+---
+- runFlow: addLanguage.yaml
+- runFlow: editCardLanguages.yaml
+- tapOn:
+    text: "Search Wikipedia"
+    index: 1
+- inputText: "NBA"
+- assertVisible: "PT"
+- tapOn: "PT"
+- stopApp: com.android.contacts

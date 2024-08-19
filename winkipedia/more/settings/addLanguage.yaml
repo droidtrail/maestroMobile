@@ -17,3 +17,4 @@ appId: org.wikipedia
     text: "Portuguese"
     index: 0
 - assertVisible: "PT"
+- back

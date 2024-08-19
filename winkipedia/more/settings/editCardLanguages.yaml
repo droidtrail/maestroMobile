@@ -1,0 +1,23 @@
+appId: org.wikipedia
+---
+- launchApp:
+    appId: "org.wikipedia"
+- assertVisible:
+    id: "org.wikipedia:id/addLangContainer"
+- tapOn: "SKIP"
+- tapOn:
+    id: "org.wikipedia:id/view_list_card_header_menu"
+- tapOn: "Edit card languages"
+- assertVisible:
+    id: "org.wikipedia:id/feed_content_type_lang_checkbox"
+    index: 0
+    checked: true
+- tapOn:
+    id: "org.wikipedia:id/feed_content_type_lang_checkbox"
+    index: 0
+- assertVisible:
+    id: "org.wikipedia:id/feed_content_type_lang_checkbox"
+    index: 0
+    checked: false
+- tapOn: "OK"
+- stopApp: com.android.contacts
